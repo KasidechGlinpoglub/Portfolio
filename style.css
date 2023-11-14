@@ -1,0 +1,611 @@
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'IBM Plex Sans Thai', sans-serif;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Kanit', sans-serif;
+}
+
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #fff;
+color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+#header {
+width: 100%;
+height: 100vh;
+background-image: url(images/backgroundT6.png);
+background-size: cover;
+background-position: center;
+}
+}
+
+
+.container {
+padding: 10px 10%;
+}
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.logo {
+width: 150px;
+}
+
+nav ul li {
+display: inline-block;
+list-style: none;
+margin: 20px 20px;
+margin-top: 25px;
+}
+
+nav ul li a {
+color: #000;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+position: relative;
+transition: color 0.5s;
+}
+
+nav ul li a:hover {
+color: #ff8809;
+transition: color 0.3s;
+}
+
+nav ul li a:hover::after {
+width: 100%;
+}
+
+.headertext {
+margin-top: 10%;
+font-size: 30px;
+}
+
+.headertext h1 {
+font-size: 60px;
+margin-top: 10px;
+}
+
+.headertext h1 span {
+color: #AC3520; /* เปลี่ยนสีเนื้อหา span เป็น #1D4F91 */
+}
+/*--------------------about---------------*/
+#about {
+padding: 80px 0;
+color: #000;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.about1 {
+width: 35%;
+}
+
+.about1 img {
+width: 100%;
+border-radius: 15px;
+}
+
+.about2 {
+flex-basis: 60%;
+}
+
+.sub {
+font-size: 60px;
+font-weight: 600;
+color: #000;
+padding-bottom: 20px;
+}
+
+.tab-tittles {
+display: flex;
+margin: 20px 0 40px;
+}
+
+.tab-tittles p {
+font-weight: 1000;
+}
+
+.tablinks {
+margin-right: 20px;
+font-size: 20px;
+display: block;
+width: fit-content;
+background: #AC3520;
+padding: 14px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 600;
+color: #ff8809;
+transition: background 0.7s;
+cursor: pointer;
+}
+
+.tablinks:hover {
+background: #AC3520;
+color:  #ff8809;
+}
+.tablinks.activelink {
+background:  #ff8809;
+color:  #AC3520;
+}
+
+.tablinks.activelink::after {
+background: rgb(14, 9, 9);
+color: white;
+}
+
+.tabcontents ul li {
+list-style: none;
+margin: 12px 0;
+}
+
+.tabcontents ul li span {
+color: #AC3520;
+font-size: 18px;
+font-weight: 600;
+}
+
+.tabcontents {
+display: none;
+}
+
+.tabcontents.activetab {
+display: block;
+}
+/*--------------------awardv2---------------*/
+#award {
+padding: 80px 0;
+color: #000;
+font-size: 20px;
+}
+
+.awardcontainer {
+padding: 0 10%;
+}
+
+.row2 {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 30px; /* ปรับขอบบนของแถว */
+}
+
+.myaward2 {
+width: 35%;
+padding: 10px 0; /* ปรับระยะห่างด้านบนและล่าง */
+box-sizing: border-box; /* รวม padding ในการคำนวณขนาด */
+}
+
+.myaward2 img {
+width: 100%;
+border-radius: 15px;
+}
+
+.myaward21 {
+flex-basis: 60%;
+margin-top: 30px; /* ปรับระยะห่างด้านบนของ myaward21 */
+padding-right: 30px;
+box-sizing: border-box; /* รวม padding ในการคำนวณขนาด */
+}
+
+.suba1 {
+font-size: 30px; /* ลดขนาดตัวอักษรเพื่อให้พอดีกับเนื้อหา */
+font-weight: 550;
+color: #AC3520;
+margin-bottom: 10px;
+padding-bottom: 20px;
+}
+
+.button1 {
+display: inline-block; /* เปลี่ยนเป็น inline-block เพื่อให้ปุ่มต่อจากเนื้อหา */
+background: rgb(255, 255, 255);
+padding: 10px 20px; /* ปรับขนาดของปุ่ม */
+border-radius: 2px;
+text-decoration: none;
+font-weight: 600;
+color:  #ff8809;
+background-color: #AC3520;
+transition: background 0.7s;
+}
+
+.button1:hover {
+background:  #ff8809;
+color: #AC3520;
+}
+
+/*---------------my project----------*/
+#services {
+padding: 20px 0;
+}
+.serviceslist {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+#myproject {
+padding: 50px 0;
+}
+.myprojects,
+.myprojects2 {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 40px;
+}
+.myprojects2 {
+margin-top: -80px;
+}
+.project {
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+.project img {
+width: 100%;
+border-radius: 15px;
+display: block;
+transition: transfrom 0.7s;
+}
+.layer {
+width: 100%;
+height: 0%;
+background: linear-gradient(#AC3520, #AC3520); /* Added semicolon here */
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+font-size: 15px;
+transition: height 0.7s;
+}
+.layer h3 {
+font-weight: 500;
+margin-bottom: 20px;
+}
+.layer a {
+margin-top: 20px;
+color:  #fff;
+text-decoration: none;
+font-size: 18px;
+line-height: 60px;
+background: #ff8809;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+}
+.project:hover img {
+transform: scale(1.1);
+}
+.project:hover .layer {
+height: 100%;
+}
+.btn {
+display: block;
+margin: 50px auto;
+width: fit-content;
+border: 2px solid #AC3520;
+padding: 14px 50px;
+border-radius: 10px;
+text-decoration: none;
+color:  #ff8809;
+transition: background 0.7s;
+}
+.btn:hover {
+background: #AC3520;
+color:  #ff8809;
+}
+/*--------------------cotact section------------*/
+.contactleft {
+flex-basis: 35%;
+}
+.contactright {
+flex-basis: 60%;
+}
+.contactleft p {
+margin-top: 30px;
+}
+.contactleft p i {
+margin-right: 15px;
+font-size: 30px;
+}
+.socialmedia {
+margin-top: 30px;
+}
+.socialmedia a {
+text-decoration: none;
+font-size: 50px;
+margin-right: 15px;
+color: #AC3520;
+display: inline-block;
+transition: tramsform 0.5s;
+}
+.socialmedia a:hover {
+color: #AC3520;
+transform: translateY(-5px);
+}
+.btn.btn2 {
+display: inline-block;
+background: #AC3520;
+color:  #ff8809;
+}
+.contactright form {
+width: 100%;
+}
+for,
+input,
+form textarea {
+width: 100%;
+border: 0;
+outline: none;
+background: darkgray;
+padding: 15px;
+margin: 15px;
+color: #fff;
+font-size: 18px;
+border-radius: 5px;
+}
+form .btn2 {
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+}
+/*----------------------respsnsive part baby-----------------*/
+nav .fa-solid {
+display: none;
+}
+@media only screen and (max-width: 600px) {
+#header {
+  background-image: url(images/backgroundT6.png);
+}
+.headertext {
+  margin-top: 30%;
+  font-size: 18px;
+}
+.headertext h1 {
+  font-size: 22.5px;
+}
+nav .fa-sharp {
+  display: block;
+  font-size: 25px;
+}
+nav .fa-solid {
+  display: block;
+  font-size: 25px;
+}
+nav ul {
+  background: #AC3520;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 200vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+nav ul li {
+  display: block;
+  margin: 25px;
+}
+nav ul .fa-solid {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 30px;
+}
+nav ul .fa-sharp {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.row,
+.row1,
+.row2 {
+  margin-left: -20px;
+}
+.sub {
+  font-size: 40px;
+}
+.about1,
+.about2 {
+  flex-basis: 100%;
+}
+.about1 {
+  margin-bottom: 10px;
+}
+.about2 {
+  font-size: 14px;
+}
+.suba {
+  font-size: 30px;
+}
+.suba1 {
+  font-size: 20px;
+  padding-top: 200px;
+  margin-right: -110px;
+  padding-left: 30px;
+}
+.l {
+  font-size: 15.2px;
+  margin-top: -20px;
+  margin-right: 10px;
+}
+.u {
+  font-size: 15.2px;
+  margin-right: -102.5px;
+  margin-top: -20px;
+  padding-left: 30px;
+}
+
+.myaward,
+.myaward1 {
+  flex-basis: 100%;
+}
+.myaward2,
+.myaward21 {
+  flex-basis: 100%;
+}
+
+.myaward2,
+.myaward {
+  margin-bottom: -80px;
+}
+
+.myaward21,
+.myaward1 {
+  font-size: 14px;
+}
+.myaward img {
+  position: relative;
+  width: 100%;
+}
+.myaward2 img {
+  width: 100%;
+  margin-bottom: 350px;
+  margin-left: 00px;
+  padding-bottom: 0px;
+}
+.button1 {
+  padding-left: -50px;
+  margin-right: -60px;
+  margin-left: 40px;
+  margin-right: -80px;
+}
+.tablinks {
+  font-size: 14px;
+  margin-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contactleft,
+.contactright {
+  flex-basis: 100%;
+}
+
+}
+#msg {
+color: rgb(74, 173, 235);
+margin-top: -40px;
+display: block;
+}
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #AC3520;
+z-index: 1000; /* Set a higher z-index value */
+}
+
+nav a {
+color: #fff;
+}
+
+body {
+padding-top: 80px;
+}
+
+#content {
+overflow-y: scroll;
+height: 100vh;
+}
+
+h1 {
+color: #000000;
+}
+h1.sub,
+p {
+color: #000000;
+}
+h4 {
+color: #ff8809;
+}
+h4,
+p {
+color: #fff;
+}
+h4 {
+color: #ff8809;
+}
+
+p {
+color: #fff;
+}
+
+span1 {
+color: #ff8809;
+}
+h6.suba1,
+p.u {
+color: #000000;
+}
+
+#myproject {
+background-image: url('images/backgroundT16.png');
+background-size: cover; 
+background-position: center;
+}
+
+#about {
+background-image: url('images/backgroundT16.png');
+background-size: cover; 
+background-position: center;
+}
+
+.footer {
+background-color: #AC3520;
+color: #ff8809;
+padding: 10px;
+text-align: center;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 999;
+}
+
+#contact {
+position: relative; /* ตั้งให้เป็น relative เพื่อให้ .footer แสดงบน #contact */
+}
